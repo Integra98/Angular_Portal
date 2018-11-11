@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const Project=require('../models/projects')
+
 //retrieving data
 router.get('/projects',(req,res,next)=>{
     Project.find(function(err,projects){
