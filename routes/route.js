@@ -62,7 +62,7 @@ router.post('/project',(req,res,next)=>{
 
 //update project
 router.put('/updateproject/:id',(req,res,next)=>{
-    Project.update({_id:req.params.id},{
+    Project.updateOne({_id:req.params.id},{
         $set :{
             name : req.body.name,
             responsible: req.body.responsible,
@@ -121,7 +121,7 @@ router.post('/employee',(req,res,next)=>{
 
 //update employee
 router.put('/updateemployee/:id',(req,res,next)=>{
-    Employee.update({_id:req.params.id},{
+    Employee.updateOne({_id:req.params.id},{
         $set :{
         first_name : req.body.first_name,
         last_name : req.body.last_name,

@@ -10,7 +10,7 @@ var app = express();
 const route = require('./routes/route');
 
 //connect to MongoDb
-mongoose.connect('mongodb://localhost:27017/MyProject');
+mongoose.connect('mongodb://localhost:27017/MyProject', { useNewUrlParser: true });
 
 //on connection
 mongoose.connection.on('connected',()=>{

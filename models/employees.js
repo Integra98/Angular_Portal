@@ -13,16 +13,13 @@ const EmployeeSchema = mongoose.Schema({
         type:String,
     },
     Position:{
-        type:String,
-        required:true
+        type:String
     },
     Email:{
-        type:String,
-        required:true
+        type:String
     },
     Phone:{
-        type:Number,
-        required:true
+        type:Number
     }
 });
 
