@@ -105,7 +105,9 @@ router.post('/employee',(req,res,next)=>{
         DateOfBirth : req.body.DateOfBirth,
         Position: req.body.Position,
         Email: req.body.Email,
-        Phone: req.body.Phone
+        Phone: req.body.Phone,
+        Photo: req.body.Photo
+
 
     });
 
@@ -128,7 +130,9 @@ router.put('/updateemployee/:id',(req,res,next)=>{
         DateOfBirth : req.body.DateOfBirth,
         Position: req.body.Position,
         Email: req.body.Email,
-        Phone: req.body.Phone
+        Phone: req.body.Phone,
+        Photo: req.body.Photo,
+        Projects: req.body.Projects
         }
     },function(err,result){
         if(err){

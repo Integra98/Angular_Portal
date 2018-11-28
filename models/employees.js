@@ -20,6 +20,12 @@ const EmployeeSchema = mongoose.Schema({
     },
     Phone:{
         type:Number
+    },
+    Photo:{
+        type:String
+    },
+    Projects: {
+        type: []
     }
 });
 

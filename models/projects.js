@@ -15,6 +15,9 @@ const TasksSchema = mongoose.Schema({
     startDate:{
         type: String
     },
+    endDate:{
+        type: String
+    },
     defenition:{
         type: String
     },
